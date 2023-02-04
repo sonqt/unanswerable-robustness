@@ -1,0 +1,4 @@
+numpy==1.22.3
+nltk==3.7
+spacy==3.3.0
+stanfordcorenlp==3.9.1.1
