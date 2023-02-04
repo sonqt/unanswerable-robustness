@@ -12,7 +12,10 @@ import spacy
 import editdistance
 from snlp import StanfordNLP
 from tqdm import tqdm
+import corenlp as corenlp
 
+CORENLP_LOG = 'corenlp.log'
+CORENLP_PORT = 5050
 import convert_queries as convert_queries
 
 sNLP = StanfordNLP()
@@ -235,7 +238,9 @@ def generate_addsent_attacks(train_set, num_attacks):
 def main():
     train_set = load_squad_train()
     print("Load data done!")
-    attacks = generate_addsent_attacks(train_set, 1)
+    with corenlp.CoreNLPServer(port=CORENLP_PORT, logfile=CORENLP_LOG) as server:
+        client = corenlp.CoreNLPClient(port=CORENLP_PORT)
+        attacks = generate_addsent_attacks(train_set, 1, client)
     with open(os.path.join(AUG_DATA_DIR, FILE_NAME), 'w') as f:
         json.dump(attacks, f)
     print(f'Augmented input data saved under: {AUG_DATA_DIR}')
