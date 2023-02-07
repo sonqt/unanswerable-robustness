@@ -240,7 +240,7 @@ def main():
     print("Load data done!")
     with corenlp.CoreNLPServer(port=CORENLP_PORT, logfile=CORENLP_LOG) as server:
         client = corenlp.CoreNLPClient(port=CORENLP_PORT)
-        attacks = generate_addsent_attacks(train_set, 1, client)
+        attacks = generate_addsent_attacks(train_set, 1)
     with open(os.path.join(AUG_DATA_DIR, FILE_NAME), 'w') as f:
         json.dump(attacks, f)
     print(f'Augmented input data saved under: {AUG_DATA_DIR}')
