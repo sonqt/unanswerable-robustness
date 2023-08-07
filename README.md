@@ -1,4 +1,4 @@
-# The Impacts of Unanswerable Questions on the Robustness of Machine Reading Comprehension Models - EACL2023 (Main Track)
+# The Impacts of Unanswerable Questions on the Robustness of Machine Reading Comprehension Models
 ## Introduction
 This repository contains the source code for the architectures described in the following paper:
 >**Single-Sentence Reader: A Novel Approach for Addressing Answer Position Bias**<br>
