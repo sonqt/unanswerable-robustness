@@ -55,6 +55,7 @@ python3 attack_main.py
 
 
 ### Examples of Negation Attack: 
+|||
 | --- | --------------- |
 | Question | In the effort of maintaining a level of  abstraction, what choice is typically left independent? | 
 | Answer | *encoding* | 
