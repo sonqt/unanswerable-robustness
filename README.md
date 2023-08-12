@@ -29,7 +29,7 @@ java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -annotators "
 ### Nearest word with Glove
 
 ```
-cd src_attack
+cd src
 ```
 
 Download [Glove](https://nlp.stanford.edu/projects/glove/) and use `glove.6B.100d.txt`
