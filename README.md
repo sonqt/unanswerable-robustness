@@ -1,7 +1,7 @@
 # The Impacts of Unanswerable Questions on the Robustness of Machine Reading Comprehension Models
 ## Introduction
 This repository contains the source code for the architectures described in the following paper:
->**Single-Sentence Reader: A Novel Approach for Addressing Answer Position Bias**<br>
+>**The Impacts of Unanswerable Questions on the Robustness of Machine Reading Comprehension Models**<br>
 >EACL 2023 <br>
 >Son Quoc Tran, Phong Nguyen-Thuan Do, Uyen Le, Matt Kretchmar<br>
 >Computer Science Department, Denison University, Granville, Ohio<br>
